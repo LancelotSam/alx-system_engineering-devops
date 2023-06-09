@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l Data School
+file --mime-type School
