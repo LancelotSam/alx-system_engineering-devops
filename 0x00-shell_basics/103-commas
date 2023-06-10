@@ -1,2 +1,2 @@
 #!/bin/bash
-ls --format=comma:period d/ >>
+ls -a --format=comma:period d/ >>
