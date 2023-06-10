@@ -1,4 +1,4 @@
 #!/bin/bash
 0	STRING	SCHOOL
-:!mimes school.mgc
-file --mime-type School
+:!mime school.mgc
+file --mime-type School *
