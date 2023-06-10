@@ -1,4 +1,3 @@
 #!/bin/bash
-0	STRING SCHOOL
+0	String SCHOOL
 :!mime text/School *
-file -C -m school.mgc
