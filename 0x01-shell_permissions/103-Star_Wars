@@ -1,2 +1,2 @@
 #!/bin/bash
-telent https://www.imdb.com/video/vi1317709849/?playlistId=tt0076759&ref_=tt_pr_ov_vi
+telnet https://www.imdb.com/video/vi1317709849/?playlistId=tt0076759&ref_=tt_pr_ov_vi
