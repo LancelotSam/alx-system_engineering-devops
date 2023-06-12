@@ -1,2 +1,2 @@
 #!/bin/bash
-uniq -u1 |wc -1|sort
+cat list_of_words |sort |uniq -1|wc -1
