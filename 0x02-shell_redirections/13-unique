@@ -1,2 +1,2 @@
 #!/bin/bash
-sort |uniq -1u
+sort |uniq -u1
