@@ -1,2 +1,2 @@
 #!/bin/bash
-BEST="School" export VARNAME="BEST"
+BEST="School" export BEST
