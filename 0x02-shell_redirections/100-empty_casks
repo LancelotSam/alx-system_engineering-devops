@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name '^$' -R
+find . -type f -empty -R
