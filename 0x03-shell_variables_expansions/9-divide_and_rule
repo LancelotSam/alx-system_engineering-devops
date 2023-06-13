@@ -1,2 +1,2 @@
 #!/bin/bash
-export POWER export DIVIDE cat $((POWER/DIVIDE))
+VARNAME="POWER" VARNAME="DIVIDE" cat $((POWER/DIVIDE))
