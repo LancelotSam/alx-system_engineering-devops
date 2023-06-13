@@ -1,2 +1,2 @@
 #!/bin/bash
-VARNAME="id" echo "hello VARNAME"
+echo "hello \$id"
