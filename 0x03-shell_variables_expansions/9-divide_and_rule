@@ -1,2 +1,2 @@
 #!/bin/bash
-cat $((POWER/DIVIDE))
+export POWER export DIVIDE cat $((POWER/DIVIDE))
