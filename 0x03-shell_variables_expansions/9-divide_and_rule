@@ -1,2 +1,2 @@
 #!/bin/bash
-VARNAME="POWER" VARNAME="DIVIDE" cat $((POWER/DIVIDE))
+cat $(($POWER/$DIVIDE))
