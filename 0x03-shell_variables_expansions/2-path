@@ -1,2 +1,4 @@
 #!/bin/bash
-export PATH="/action:$PATH"
+export PATH=$PATH:/action
+##append at the end of the current directory
+##prepend or at the start of teh curent path export PATH="/action:$PATH"
