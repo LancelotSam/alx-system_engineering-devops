@@ -1,2 +1,2 @@
 #!/bin/bash
-VARNAME="\$USER" echo "Hello \$USER"
+VARNAME="\$USER" echo "Hello VARNAME"
