@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..z}-{a..z} | tr ' ' '\n' | cut -c1-64 | grep -v "oo"
+echo {a..z}-{a..z} | tr ' ' '\n' | last -n 64 | grep -v "oo"
