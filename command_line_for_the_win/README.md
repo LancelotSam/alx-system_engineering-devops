@@ -14,13 +14,14 @@ sftp> cd command_line_for_the_win
 sftp> ls
 README.md
 sftp> put D:\Programming\CMDLINE\*
-Uploading D:/Programming/CMDLINE/challenge1.png to /alx-system_engineering-devops/command_line_for_the_win/challenge1.png
-D:/Programming/CMDLINE/challenge1.png                                                 100%  229KB 175.0KB/s   00:01
-Uploading D:/Programming/CMDLINE/challenge10.png to /alx-system_engineering-devops/command_line_for_the_win/challenge10.png
-D:/Programming/CMDLINE/challenge10.png                                                100%  253KB 469.4KB/s   00:00
-Uploading D:/Programming/CMDLINE/challenge11.png to /alx-system_engineering-devops/command_line_for_the_win/challenge11.png
-D:/Programming/CMDLINE/challenge11.png                                                100%  265KB 489.5KB/s   00:00
-Uploading D:/Programming/CMDLINE/challenge12.png to /alx-system_engineering-devops/command_line_for_the_win/challenge12.png
-D:/Programming/CMDLINE/challenge12.png                                                100%  256KB 472.1KB/s   00:00
-
+Uploading D:/Programming/CMDLINE/0-first_9_tasks.png to /alx-system_engineering-devops/command_line_for_the_win/0-first_9_tasks.png
+D:/Programming/CMDLINE/0-first_9_tasks.png                                            100%  234KB  63.4KB/s   00:03
+Uploading D:/Programming/CMDLINE/1-next_9_tasks.png to /alx-system_engineering-devops/command_line_for_the_win/1-next_9_tasks.png
+D:/Programming/CMDLINE/1-next_9_tasks.png                                             100%  244KB  90.4KB/s   00:02
+Uploading D:/Programming/CMDLINE/2-next_9_tasks.png to /alx-system_engineering-devops/command_line_for_the_win/2-next_9_tasks.png
+D:/Programming/CMDLINE/2-next_9_tasks.png                                             100%  303KB  59.1KB/s   00:05
+Uploading D:/Programming/CMDLINE/Individual/ to /alx-system_engineering-devops/command_line_for_the_win/
+D:/Programming/CMDLINE/Individual/ is not a regular file
+sftp> ls
+0-first_9_tasks.png     1-next_9_tasks.png      2-next_9_tasks.png      README.md
 And that was it
