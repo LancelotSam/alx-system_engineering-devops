@@ -6,5 +6,5 @@ i=10
 until [ $i -lt 1 ]
 do
 	echo "best School"
-	let i-=1
+	((i-=1))
 done

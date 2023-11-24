@@ -1,9 +1,3 @@
-About Bash projects
-Unless stated, all your projects will be auto-corrected with Ubuntu 20.04 LTS.
-
-Background Context
-
-
 Resources
 Read or watch:
 
@@ -14,12 +8,12 @@ File test operators
 Make your scripts portable
 man or help:
 
-env
-cut
-for
-while
-until
-if
+#env
+#cut
+#for
+#while
+#until
+#if
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
