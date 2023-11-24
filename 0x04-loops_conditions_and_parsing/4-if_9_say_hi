@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#Display Best School 8 times, say Hi and then Best School once more
+
+i=0
+
+while [ $i -lt 11 ]
+do
+	if [ $i = 9 ]
+	then
+		echo "Hi"
+	else
+		echo "best School"
+	fi
+	let i+=1
+done	
