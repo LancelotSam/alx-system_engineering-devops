@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Display process containing the word bash
+#shellcheck disable=SC2009
+#a: Show processes for all users.
+#u: Display more detailed information, including the user-oriented format.
+#x: Include processes that do not have a controlling terminal (TTY).
+#f: Show a tree-like structure to represent the process hierarchy.
+
+ps -auxf | grep "bash"
