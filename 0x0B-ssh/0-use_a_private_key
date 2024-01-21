@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#using ssh to connect to my server
+#i is teh identity
+ssh ubuntu -i ~/.ssh/id_rsa
