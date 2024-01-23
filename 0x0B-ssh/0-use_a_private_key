@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #using ssh to connect to my server
 #i is the identity
-ssh ubuntu -i ~/.ssh/id_rsa
+ssh ubuntu@18.234.80.211 -i ~/.ssh/school
