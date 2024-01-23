@@ -1,5 +1,5 @@
 #!/usr/bin/env puppet
-#using puppet to install a package from pip
+#using puppet to install a flask package from pip
 
 package { ['flask', 'Werkzeug']:
   ensure   => '2.1.0',
