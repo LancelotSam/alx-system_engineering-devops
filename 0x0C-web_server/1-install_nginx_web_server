@@ -7,8 +7,6 @@ echo "Hello World!" > /var/www/html/index.html
 echo "server {
     listen 80 default_server;
     listen [::]:80 default_server;
-    root   /var/www/html;
-    index  index.html;
     location / {
         return 200 'Hello World!';
     }
