@@ -4,7 +4,8 @@
 apt-get update
 apt-get install -y nginx
 echo "Hello World!" > /var/www/html/index.html
-echo "server {
+cat <<EOL > /etc/nginx/sites-available/default
+server {
     listen 80 default_server;
     listen [::]:80 default_server;
     root /var/www/html;
@@ -12,5 +13,6 @@ echo "server {
     location / {
         try_files $uri $uri/ /index.html;
     }
-}" > /etc/nginx/sites-available/default
+}
+EOL
 service nginx start
