@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Install and configure HAproxy on your lb-01 server.
 
-apt-get -y install software-properties-common
-add-apt-repository -y ppa:vbernat/haproxy-2.6
-apt-get -y update
-apt-get -y install haproxy
+sudo apt-get -y install software-properties-common
+sudo add-apt-repository -y ppa:vbernat/haproxy-2.6
+sudo apt-get -y update
+sudo apt-get -y install haproxy
 
 sed -i -e '$aENABLED=1\n' /etc/default/haproxy
-sed -i -e '$a\listen balancer\n\tbind :80\n\tbalance roundrobin\n\tserver 52468-web-01 54.144.157.140:80 check\n\tserver 52468-web-02 54.144.134.137:80 check\n' /etc/haproxy/haproxy.cfg
+sed -i -e '$a\listen balancer\n\tbind :80\n\tbalance roundrobin\n\tserver 452991-web-01 18.234.80.211:80 check\n\tserver 452991-web-02 100.26.122.18:80 check\n' /etc/haproxy/haproxy.cfg
 service haproxy restart
