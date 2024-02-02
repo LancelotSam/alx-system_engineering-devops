@@ -1,16 +1,33 @@
 #!/usr/bin/env bash
 # Installs nginx web server
 
-apt-get update
-apt-get install -y nginx
-echo "Hello World!" > /var/www/html/index.html
-echo "server {
-    listen 80;
-    listen [::]:80 default_server;
-    root   /etc/nginx/html;
-    index  index.html;
-    location /redirect_me {
-        return 301 https://www.youtube.com/watch?v=v6T-jmm8SH8;
-    }
-}" > /etc/nginx/sites-available/default
-service nginx restart
+#!/usr/bin/env bash
+#  A Script that configures a new Ubuntu machine to Perform a 301-redirection
+
+# Upadating Packages before Installations
+sudo apt-get update
+sudo apt-get install -y nginx
+
+# Creating an index.html page
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Performing a 301 Redirection
+string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/LancelotSam permanent;"
+sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
+
+# Restarting Nginx service
+sudo service nginx restart
+
+#apt-get update
+#apt-get install -y nginx
+#echo "Hello World!" > /var/www/html/index.html
+#echo "server {
+ #   listen 80;
+#    listen [::]:80 default_server;
+ #   root   /etc/nginx/html;
+  #  index  index.html;
+   # location /redirect_me {
+    #    return 301 https://www.youtube.com/watch?v=v6T-jmm8SH8;
+    #}
+#}" > /etc/nginx/sites-available/default
+#service nginx restart
