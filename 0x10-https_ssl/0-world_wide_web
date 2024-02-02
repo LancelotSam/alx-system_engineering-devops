@@ -1,15 +1,23 @@
 #!/usr/bin/env bash
-# to aduit the DNS records for given subdomains
 
+# Function to audit DNS records for given domain and subdomain
 print_domain_subdomain () {
-	dig "$1" | grep -A1 'ANSWER SECTION:' | sed -r
-	local domain="$1"
-	local subdomain="$2"
+    local domain="$1"
+    local subdomain="$2"
+    local subdomains
 
-	if [ -z "$subdomain" ]; then
-		subdomains=("www" "lb-1" "web-01" "web-02")
-	else
-		subdomains=("$subdomain")
-	fi
+    if [ -z "$subdomain" ]; then
+        subdomains=("www" "lb-1" "web-01" "web-02")
+    else
+        subdomains=("$subdomain")
+    fi
 
-	for sub in "$subdomains[@]}"; do
+    for sub in "${subdomains[@]}"; do
+        record=$(dig "$sub.$domain" | awk '/ANSWER SECTION/{getline; print}')
+        if [[ -n "$record" ]]; then
+            destination=$(echo "$record" | awk '{print $NF}')
+            record_type=$(echo "$record" | awk '{print $(NF-1)}')
+            echo "The subdomain $sub is a $record_type record and points to $destination"
+        fi
+    done
+}
