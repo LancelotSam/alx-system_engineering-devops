@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
 #configure nginx server to listen for port 80 instead  of 8080
-#this is spam
-#this is spam
-sed -i 's/listen 8080;/listen 80;/g' /etc/nginx/sites-enabled/default
-service nginx restart
+
+# paths to the Nginx configuration files
+sites_available="/etc/nginx/sites-available"
+sites_enabled="/etc/nginx/sites-enabled"
+
+# site name
+site_name="default"
+
+# Create a symbolic link from sites-available to sites-enabled
+sudo ln -sf "$sites_available/$site_name" "$sites_enabled/$site_name"
+
+# Restart Nginx to apply the changes
+sudo systemctl restart nginx
+
+#sed -i 's/listen 8080;/listen 80;/g' /etc/nginx/sites-enabled/default
