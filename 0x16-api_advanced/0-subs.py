@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-import requests
-"""Queries Reddit Api and retursn the number of subscribers"""
+"""Module for task 0"""
 
 
 def number_of_subscribers(subreddit):
     """Queries the Reddit API and returns the number of subscribers
     to the subreddit"""
+    import requests
 
     sub_info = requests.get("https://www.reddit.com/r/{}/about.json"
                             .format(subreddit),
